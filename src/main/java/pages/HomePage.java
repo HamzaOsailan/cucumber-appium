@@ -1,11 +1,12 @@
 package pages;
 
-import Projects.ActionsBot;
-import Projects.PageBase;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
+import utility.ActionsBot;
+import utility.PageBase;
 
 public class HomePage extends PageBase {
     By WEBDRIVERTITLE = By.xpath("//*[@text='WEBDRIVER']");
@@ -21,36 +22,36 @@ public class HomePage extends PageBase {
     }
 
 
-    public String proof(){
-        wait.until(ExpectedConditions.presenceOfElementLocated(WEBDRIVERTITLE));
-        return driver.findElement(WEBDRIVERTITLE).getText();
-    }
+//    public String proof(){
+//        wait.until(ExpectedConditions.presenceOfElementLocated(WEBDRIVERTITLE));
+//        return driver.findElement(WEBDRIVERTITLE).getText();
+//    }
 
-    public Webview ClickToWebview (){
-        wait.until(ExpectedConditions.presenceOfElementLocated(webviewNav));
-        bot.doubleTap(webviewNav);
+//    public Webview ClickToWebview (){
+//        wait.until(ExpectedConditions.presenceOfElementLocated(webviewNav));
+//        bot.doubleTap(webviewNav);
+//
+//        return new Webview(driver,bot,wait);
+//    }
+//    public LoginAndSignUp ClickToLogin(){
+//        wait.until(ExpectedConditions.presenceOfElementLocated(loginNav));
+//        bot.click(loginNav);
+//        return new LoginAndSignUp(driver,bot,wait);
+//    }
+//    public Forms ClickToForms(){
+//        wait.until(ExpectedConditions.presenceOfElementLocated(forms));
+//        bot.click(forms);
+//        return new Forms(driver,bot,wait);
+//    }
+//    public Swipe ClickToSwipe(){
+//        wait.until(ExpectedConditions.presenceOfElementLocated(swipe));
+//        bot.click(swipe);
+//        return new Swipe(driver,bot,wait);
+//    }
 
-        return new Webview(driver,bot,wait);
-    }
-    public LoginAndSignUp ClickToLogin(){
-        wait.until(ExpectedConditions.presenceOfElementLocated(loginNav));
-        bot.click(loginNav);
-        return new LoginAndSignUp(driver,bot,wait);
-    }
-    public Forms ClickToForms(){
-        wait.until(ExpectedConditions.presenceOfElementLocated(forms));
-        bot.click(forms);
-        return new Forms(driver,bot,wait);
-    }
-    public Swipe ClickToSwipe(){
-        wait.until(ExpectedConditions.presenceOfElementLocated(swipe));
-        bot.click(swipe);
-        return new Swipe(driver,bot,wait);
-    }
-
-    public Drag ClickToDrag() {
-        bot.click(dragNav);
-        return new Drag(driver, bot, wait);
-    }
-
+//    public Drag ClickToDrag() {
+//        bot.click(dragNav);
+//        return new Drag(driver, bot, wait);
+//    }
+//
 }

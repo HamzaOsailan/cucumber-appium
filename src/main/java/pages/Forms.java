@@ -1,11 +1,11 @@
 package pages;
 
-import Projects.ActionsBot;
-import Projects.PageBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
+import utility.ActionsBot;
+import utility.PageBase;
 
 public class Forms extends PageBase {
 

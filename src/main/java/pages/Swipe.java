@@ -1,12 +1,13 @@
 package pages;
 
-import Projects.ActionsBot;
-import Projects.PageBase;
+
 import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.Wait;
+import utility.ActionsBot;
+import utility.PageBase;
 
 import java.util.Map;
 
